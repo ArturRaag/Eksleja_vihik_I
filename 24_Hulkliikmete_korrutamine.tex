@@ -1,0 +1,320 @@
+\begin{center}
+\fbox{\fbox{\parbox{6.5in}{\centering
+\begin{flushleft}
+
+\vspace{2mm}
+\hspace{5mm}
+\textbf{\underline{Hulkliikmete korrutamine}}
+
+\vspace{2mm}
+\hspace{5mm}
+Selleks et korrutada hulkliige hulkliikmega, korrutame esimese hulkliikme iga üksliikme teise hulkliikme\\ \hspace{5mm} kõigi üksliikmetega ja liidame saadud korrutised.
+
+\vspace{2mm}
+\hspace{5mm}
+\begin{equation}
+\label{24_eq1}
+(a+b)(x+y)=ax+ay+bx+by
+\end{equation}
+
+\vspace{2mm}
+\hspace{5mm}
+Ehk ennem võtame avaldises \ref{24_eq1} esimesest sulust $(a+b)$ esimese üksliikme $a$, ning korrutame kogu\\ \hspace{5mm} teise sulu $(x+y)$ $a$-ga läbi. Korrutised liidame, võttes arvesse ka märgireeglid. Siis kui teises sulus\\ \hspace{5mm} on liikmed otsas, siis võtame esimeses sulus järgmise üksliikme $b$ ja korrutame jälle kogu teise sulu\\ \hspace{5mm} $b$-ga läbi.
+
+\vspace{2mm}
+\hspace{5mm}
+\textbf{Näited:}
+
+\vspace{2mm}
+\hspace{5mm}
+1) $(xy+2)(z+5a)=xy\cdot z+xy\cdot 5a+2\cdot z+2\cdot 5a=xyz+5axy + 2z+10a$
+
+
+\vspace{2mm}
+\hspace{5mm}
+2) $(1+x^{2})(a-10b+5c-100)=1\cdot a + 1\cdot (-10b) + 1 \cdot 5c + 1\cdot (-100)+x^{2}\cdot a +x^{2}\cdot (-10b) +x^{2}\cdot 5c+...$
+
+\vspace{2mm}
+\hspace{5mm}
+$...+x^{2}\cdot (-100)= a-10b+5c-100+x^{2}a-10bx^{2} + 5x^{2}-100x^{2}$
+
+\vspace{5mm}
+\hspace{5mm}
+\textbf{\underline{Ruutude vahe valem}}
+
+\vspace{2mm}
+\hspace{5mm}
+Kui meil on esimeses ja teises sulus (hulkliikmes) samasugused arvud (üksliikmed) siis kehtivad mõned\\ \hspace{5mm} üldised valemid, mis meie arvutamist veidi kiirendada saaksid. Kusjuures hulkliikmete järjekord\\ \hspace{5mm} lõpptulemust ei muuda!
+
+\vspace{2mm}
+\hspace{5mm} Esimene neist on \textbf{ruutude vahe valem}:
+
+
+\vspace{2mm}
+\hspace{5mm}
+$(a+b)(a-b)=\underbrace{a\cdot a + a\cdot (-b)+b\cdot a + b\cdot (-b)=a^{2}-\cancel{ab}+\cancel{ab}-b^{2}}_\text{\begin{tabular}{c}
+pikk arvutus, mida võib\\
+edaspidi vahele jätta
+\end{tabular}}=a^{2}-b^{2}$
+
+\vspace{2mm}
+\hspace{5mm}
+Ehk: 
+\begin{equation}
+\label{24_eq2}
+\boxed{(a+b)(a-b)=a^{2}-b^{2}}
+\end{equation}
+
+\vspace{2mm}
+\hspace{5mm}
+Proovime nüüd rakendada valemit \ref{24_eq2}.
+
+\vspace{2mm}
+\hspace{5mm}
+\textbf{Näited:}
+
+\vspace{2mm}
+\hspace{5mm}
+1) $(3x+5)(3x-5)=\left[\begin{tabular}{c}
+Näeme, et sulgudes olevad arvud on samad\\
+ning märgid on erinevad nagu valemis \ref{24_eq2}.\\
+Kiirema lõpptulemuse saamiseks saame \\
+kasutada valemit \ref{24_eq2}.
+\end{tabular} \right]=(3x)^{2}-(5)^{2}=9x^{2}-25$
+
+\vspace{5mm}
+\hspace{5mm}
+2) $(3x+5)(3x+5)=\left[\begin{tabular}{c}
+Näeme, et sulgudes olevad arvud on samad,\\
+kuid märgid on seekord samuti samad.\\
+Selle tõttu \underline{ei saa} me valemit \ref{24_eq2} kasutada.\\
+Peame minema pikkemat teed pidi valemiga \ref{24_eq1}.\\
+Pärast näeme, et selle jaoks on eraldi valem (\ref{24_eq3}).
+\end{tabular} \right]=...$
+
+\vspace{5mm}
+\hspace{5mm}
+$...= 3x\cdot 3x + 3x \cdot 5+ 5 \cdot 3x+ 5 \cdot 5 = 9x^{2}+15x+15x+25=9x^{2}+30x+25$
+\end{flushleft}
+}}}
+\end{center}
+
+\pagebreak
+\begin{center}
+\fbox{\fbox{\parbox{6.5in}{\centering
+\begin{flushleft}
+
+\vspace{2mm}
+\hspace{5mm}
+3) $(5x+7)(3x-7)=\left[ \begin{tabular}{c}
+Sulgudes olevad arvud ei\\
+ole samad. Valemit \ref{24_eq2}\\
+kasutada \underline{ei saa}.
+\end{tabular} \right]= 5x \cdot 3x + 5x \cdot (-7)+7\cdot 3x + 7 \cdot (-7)=$
+
+\vspace{2mm}
+\hspace{5mm}
+$= 15x^{2}-\underline{35x} + \underline{21x}-49 =15x^{2}- 14x-49$
+ 
+\vspace{5mm}
+\hspace{5mm}
+\textbf{\underline{Kaksliikme ruut}}
+
+
+\vspace{2mm}
+\hspace{5mm}
+Kui korrutada omavahel kaks ühesugust kaksliiget (hulkliige, mis koosneb kahest üksliikmest), siis on\\ \hspace{5mm} kaks üldjuhtu.
+
+\vspace{2mm}
+\hspace{5mm}
+Esimene neist on \textbf{üksliikmete summa ruut:}
+
+\[(a+b)^{2}=(a+b)(a+b)=a\cdot a + a\cdot b + b \cdot a+b \cdot b=a^{2}+ab+ab+b^{2}=a^{2}+2ab+b^{2} \]
+
+\vspace{2mm}
+\hspace{5mm}
+Ehk lühidalt:
+
+\begin{equation}
+\label{24_eq3}
+\boxed{(a+b)^{2}=a^{2}+2ab+b^{2}}
+\end{equation}
+
+\vspace{2mm}
+\hspace{5mm}
+Teine üldjuht on \textbf{üksliikmete vahe ruut:}
+
+\[(a-b)^{2}=(a-b)(a-b)=a\cdot a + a\cdot (-b) + (-b)\cdot a + (-b)\cdot (-b)=a^{2}-ab-ab+b^{2}=a^{2}-2ab+b^{2}  \]
+
+\vspace{2mm}
+\hspace{5mm}
+Ehk lühidalt:
+
+\begin{equation}
+\label{24_eq4}
+\boxed{(a-b)^{2}=a^{2}-2ab+b^{2}}
+\end{equation}
+
+\vspace{2mm}
+\hspace{5mm}
+NB! Pange tähele kuidas valemid \ref{24_eq3} ja \ref{24_eq4} erinevad märkide poolest!
+
+\vspace{2mm}
+\hspace{5mm}
+\textbf{Näited:}
+
+\vspace{2mm}
+\hspace{5mm}
+1) $(3x+2)^{2}=\left[\begin{tabular}{c}
+Rakendame\\
+valemit \ref{24_eq3}.
+\end{tabular} \right]=(3x)^{2}+2 \cdot (3x \cdot 2)+(2)^{2}=9x^{2}+12x+4 $
+
+\vspace{2mm}
+\hspace{5mm}
+2) $(ab-2x)^{2}=\left[\begin{tabular}{c}
+Rakendame\\
+valemit \ref{24_eq4}.
+\end{tabular} \right]=(ab)^{2}-2\cdot (ab \cdot 2x)+(2x)^{2}=a^{2}b^{2}-4abx+4x^{2}$
+
+\vspace{2mm}
+\hspace{5mm}
+3) $(-2a-3)^{2}=\left[\begin{tabular}{c}
+Siin me kahjuks kumbagi valemit \\
+kasutada ei saa. Kuid me teame,\\
+et $(-2a-3)^{2}=(-2a-3)(-2a-3)$.\\
+\end{tabular} \right]=(-2a-3)(-2a-3)=...$
+
+\vspace{5mm}
+\hspace{5mm}
+$... = \left[ \begin{tabular}{c}
+Samuti teame, et miinusmärk\\
+sulu ees, muudab märgid sulu\\
+sees. Tõstame iga sulu ette\\
+miinuse (täpsemalt arvu $-1$).
+\end{tabular} \right]=(-1)(2a+3)(-1)(2a+3)=\left[\begin{tabular}{c}
+Teame, et:\\
+$(-1)\cdot(-1)= +1$
+\end{tabular}  \right]=...$
+
+\vspace{5mm}
+\hspace{5mm}
+$...=(2a+3)(2a+3)=\left[ \begin{tabular}{c}
+Nüüd on selge, et saame\\
+kasutada valemit \ref{24_eq3}
+\end{tabular} \right] = 4a^{2}+12a+9 $
+
+\vspace{2mm}
+\hspace{5mm}
+Põhjalikult asju läbi kirjutades võib küll tunduda, et kolmandas näites on arvutamise protsess\\ \hspace{5mm} ülemõistuse pikk, kuid kui kõik mainitud teadmised on meeles, siis võib need kirjutamata jätta ja\\ \hspace{5mm} vastuseni palju kiiremini jõuda. Säärased teadmised jäävad paremini meelde vaid harjutades, mitte\\ \hspace{5mm} valemeid pähe tuupides.
+\end{flushleft}
+}}}
+\end{center}
+
+\pagebreak
+
+\begin{center}
+\fbox{\fbox{\parbox{6.5in}{\centering
+\begin{flushleft}
+
+\vspace{2mm}
+\hspace{5mm}
+\textbf{\underline{Kaksliikme kuup}}
+
+\vspace{2mm}
+\hspace{5mm}
+Kui korrutada omavahel kolm ühesugust kaksliiget (hulkliige, mis koosneb kahest üksliikmest), siis on\\ \hspace{5mm} kaks üldjuhtu.
+
+\vspace{2mm}
+\hspace{5mm}
+Esimene neist on \textbf{üksliikmete summa kuup:}
+
+\[(a+b)^{3}=(a+b)(a+b)(a+b)= (a+b)(a+b)^{2}=(a+b)(a^{2}+2ab+b^{2})=...\]
+
+\[...=a^{3}+\underline{2a^{2}b}+\underline{\underline{ab^{2}}}+\underline{a^{2}b} + \underline{\underline{2ab^{2}}}+b^{3}= a^{3}+3a^{2}b+3ab^{2}+b^{3}\]
+
+\vspace{2mm}
+\hspace{5mm}
+Ehk lühemalt:
+
+\begin{equation}
+\label{24_eq5}
+\boxed{(a+b)^{3}=a^{3}+3a^{2}b+3ab^{2}+b^{3}}
+\end{equation}
+
+\vspace{2mm}
+\hspace{5mm}
+Teine üldjuht on \textbf{üksliikmete vahe kuup:}
+
+\[(a-b)^{3}=[a+(-b)]^{3}=a^{3}+3a^{2}\cdot (-b)+3a\cdot (-b)^{3} +(-b)^{3} = a^{3}-3a^{2}b+3ab^{2}-b^{3}  \]
+
+\vspace{2mm}
+\hspace{5mm}
+Ehk lühemalt:
+
+\begin{equation}
+\label{24_eq6}
+\boxed{(a-b)^{3}=a^{3}-3a^{2}b+3ab^{2}-b^{3}}
+\end{equation}
+
+\vspace{2mm}
+\hspace{5mm}
+\textbf{\underline{Kuupide summa ning vahe valemid}}
+
+\vspace{2mm}
+\hspace{5mm}
+Lisaks osutuvad kasulikuks ka \textbf{kuupide summa} valem:
+\begin{equation}
+\label{24_eq7}
+\boxed{a^{3}+b^{3}=(a+b)(a^{2}-ab+b^{2})}
+\end{equation}
+
+\hspace{5mm}
+ning \textbf{kuupide vahe} valem:
+
+\begin{equation}
+\label{24_eq8}
+\boxed{a^{3}-b^{3}=(a-b)(a^{2}+ab+b^{2})}
+\end{equation}
+
+\vspace{2mm}
+\hspace{5mm}
+Valemite kasu seisneb selles, et need aitavad meil avaldisi kiiremini  tegurdada. Avaldiste tegurdamine\\ \hspace{5mm} võib meid aga aidata avaldisi lihtsustada.
+
+\vspace{2mm}
+\hspace{5mm}
+\textbf{Näiteks:}
+
+\vspace{2mm}
+\hspace{5mm}
+Lihtsustame järgmise avaldise:
+
+\vspace{2mm}
+\hspace{5mm}
+$\dfrac{x^{3}-z^{3}}{x-z}=\left[ \begin{tabular}{c}
+Tegurdame lugeja lahti\\
+valemiga \ref{24_eq8}.
+\end{tabular} \right]=\dfrac{(x-z)(x^{2}+xz+z^{2})}{x-z}=\left[ \begin{tabular}{c}
+Taandame sarnased\\
+liikmed
+\end{tabular} \right]=...$
+
+\vspace{5mm}
+\hspace{5mm}
+$...=\dfrac{\cancel{(x-z)}(x^{2}+xz+z^{2})}{\cancel{x-z}}=\dfrac{1 \cdot (x^{2}+xz+z^{2}) }{1}=x^{2}+xz+z^{2}$
+
+
+
+\end{flushleft}
+}}}
+\end{center}
+
+\pagebreak
+
+\vspace{0.5cm}
+
+\textbf{Märkmed}\\
+\vspace{2mm}
+\begin{mdframed}[style=graphpaper]
+\vspace{21cm}
+\end{mdframed}

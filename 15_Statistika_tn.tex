@@ -1,0 +1,123 @@
+\begin{center}
+\fbox{\fbox{\parbox{6.5in}{\centering
+\begin{flushleft}
+
+\hspace{5mm}
+Sündmuseid tähistatakse tavaliselt suurte tähtedega nagu A, B, C jne. Sündmuse toimumise tõenäosust\\ \hspace{5mm} tähistatakse suure tähega P ja sulgudesse pannakse sündmusele vastav täht. Nt: $P(A)$.
+
+\vspace{5mm}
+\hspace{5mm}
+\textbf{\underline{Sündmuste liigid}}
+
+\vspace{2mm}
+\hspace{5mm}
+1) Kindel sündmus - Sündmus, mis kindlasti toimub. Sellise sündmuse toimumise tõenäosus on 1.
+
+\vspace{2mm}
+\hspace{9mm} Näiteks: Punase kuuli võtmine urnist, kus on vaid punased kuulid. $P(A)=1$
+
+\vspace{2mm}
+\hspace{5mm}
+2) Võimatu sündmus - Sündmus, mis ei saa mitte kuidagi toimuda. Sellise sündmuse tõenäosus on 0. 
+
+\vspace{2mm}
+\hspace{9mm}
+Näiteks: Sinise pliiatsi võtmine pinalist, milles on vaid punased pliiatsid. $P(A)=0$
+
+\vspace{2mm}
+\hspace{5mm}
+3) Juhuslik sündmus - Sündmus, mis võib toimuda või mitte toimuda. Sellise sündmuse tõenäosus jääb\\ \hspace{9mm} 0 ja 1 vahele. Ehk $0\leq P(A) \leq 1$.
+
+\vspace{2mm}
+\hspace{9mm}
+Näiteks: Viie silma veeretamine tavalise täringuga. $P(A)=\dfrac{1}{6}\approx 0.167$
+
+\vspace{5mm}
+\hspace{5mm}
+\textbf{\underline{Klassikalise tõenäosuse valem}}
+
+\vspace{2mm}
+\hspace{5mm}
+Viimane avaldis on tegelikult klassikaline tõenäosuse valem, mille üldine kuju on järgmine:
+
+\vspace{2mm}
+\hspace{5mm}
+\begin{equation}
+\label{eq15_1}
+\fbox{$P(A)=\dfrac{n}{k}$}
+\end{equation}
+
+\hspace{5mm}
+kus $P(A)$ on sündmuse $A$ toimumise tõenäosus, $n$ on soodsate võimaluste arv (ehk võimalused, mis\\ \hspace{5mm} rahuldavad meie poolt määratud tingimusi) ning $k$ on KÕIKIDE võimaluste arv (kõik võimalused, mis\\ \hspace{5mm} võivad katsel esineda). 
+
+\vspace{2mm}
+\hspace{5mm}
+\textbf{Näide:}
+
+\vspace{2mm}
+\hspace{5mm}
+Olgu meil jope taskus 3 kahekümnesendist, 15 kümnesendist, 4 viiekümnesendist ning 4 ühe eurost\\ \hspace{5mm} münti. Milline on tõenäosus, et taskust juhuslikult võetud münt on väärtuselt vähemalt 50 senti?
+
+\vspace{2mm}
+\hspace{5mm}
+Esimese sammuna oleks soovituslik ära määrata, mis on kõikide võimaluste arv $k$. Ehk meie ülesande\\ \hspace{5mm} puhul me peame leidma, mis on kõik mündid, mis meil taskus on. Selle jaoks piisab, kui me liidame\\ \hspace{5mm} lihtsalt kõik mündid kokku:
+
+\vspace{2mm}
+\hspace{5mm}
+\[ 3+15+4+4=26 \]
+
+\hspace{5mm}
+Kokku on meil taskus 26 münti, see on ka meie kõikide võimaluste arv $k$.
+
+\vspace{2mm}
+\hspace{5mm}
+Järgmisena tuleb leida soodsate võimaluste arv, ehk millised mündid kõikide müntide (26) seast,\\ \hspace{5mm} rahuldavad meie poolt määratud tingimust. Meie tingimuseks on hetkel see, et juhuslikult võetud\\ \hspace{5mm} münt peab olema vähemalt 50 sendi väärtusega. See tähendab, et see võib olla 50 senti või rohkem.\\ \hspace{5mm}  Mitu sellist münti meil on?
+
+\vspace{2mm}
+\hspace{5mm}
+Meil on 3 kahekümnesendist, kuid need \textbf{ei rahulda} meie tingimust, mille tõttu neid me arvesse ei\\ \hspace{5mm} võtta. Meil on 15 kümnesendist, mis samuti meie tingimust \textbf{ei rahulda}. Meil on 4 viiekümnesendist,\\ \hspace{5mm} mis \textbf{rahuldavad} meie tingimust. Viimaks meil on ka 4 ühe eurost münti, mis samuti \textbf{rahuldavad}\\ \hspace{5mm} meie tingimust. Münte, mis rahuldavad meie tingimust, on kokku $4+4=8$, see on ka meie soodsate\\ \hspace{5mm} võimaluste arv $n$.
+
+\hspace{5mm}
+Näide jätkub järgmisel lehel...
+\end{flushleft}
+}}}
+\end{center}
+
+
+\begin{center}
+\fbox{\fbox{\parbox{6.5in}{\centering
+\begin{flushleft}
+
+\vspace{2mm}
+\hspace{5mm}
+Kuna $k=26$ ning $n=8$, siis saame kasutades valemit \ref{eq15_1} leidagi tõenäosuse. Saame:
+
+\begin{equation}
+\label{eq15_2}
+P(A)=\dfrac{8}{26}\approx 0.3077
+\end{equation}
+
+\hspace{5mm}
+Vastus: Tõenäosus, et juhuslikult taskust võetud münt on vähemalt 50 sendine, on 0.3077.
+
+\vspace{2mm}
+\hspace{5mm}
+Sisuliselt saab tõenäosust ka $100$-ga läbi korrutada ning väljendada tõenäosust protsentuaalselt. Meie\\ \hspace{5mm} ülesande puhul oleks siis taskust vähemalt 50 sendise mündi võtmise tõenäosus 30.77\%.
+
+\vspace{2mm}
+\hspace{5mm}
+Tavaliselt aga piirdutakse kümnendmurru kujuga nagu avalidses \ref{eq15_2}.
+
+
+\end{flushleft}
+}}}
+\end{center}
+
+
+\vspace{0.5cm}
+
+\textbf{Märkmed}\\
+\vspace{2mm}
+\begin{mdframed}[style=graphpaper]
+\vspace{14cm}
+\end{mdframed}

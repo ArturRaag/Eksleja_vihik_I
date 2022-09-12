@@ -1,0 +1,117 @@
+\begin{center}
+\fbox{\fbox{\parbox{6.5in}{\centering
+\begin{flushleft}
+
+\vspace{2mm}
+\hspace{5mm}
+\textbf{\underline{Pythagorase teoreem}}
+
+
+\vspace{5mm}
+\hspace{5mm}
+\begin{tikzpicture}[scale=0.5]
+
+\coordinate (A) at (0,0);
+\coordinate (B) at (8,0);
+\coordinate (C) at (8,4);
+
+\draw[line width= 0.4mm] (A)--(B)--(C)--cycle;
+
+\path (A)--(B) coordinate[pos=0.5](a);
+\path (B)--(C) coordinate[pos=0.5](b);
+\path (C)--(A) coordinate[pos=0.5](c);
+
+\node[below] at (a){$a$};
+\node[right] at (b){$b$};
+\node[above] at (c){$c$};
+
+\node[left] at (A){$A$};
+\node[right] at (B){$B$};
+\node[above] at (C){$C$};
+
+\pic [draw, angle radius = 5mm ] {angle=C--B--A} node at (7.6,0.4){$\cdot$};
+\pic [draw, angle radius= 10mm] {angle=B--A--C} node at (1.2,0.3){$\alpha$};
+\pic [draw, angle radius = 7mm] {angle = A--C--B} node at (7.6,3.2){$\beta$};
+
+\node[text width= 10cm] at (20,2){\textbf{Hüpotenuus} on täisnurga vastaskülg (joonisel tähistatud $c$ - ga).\\
+Täisnurga lähiskülgi nimetatakse \textbf{kaatetiteks} (joonisel tähistatud külgedega $a$ ja $b$).\\
+
+\vspace{2mm}
+\textbf{Pythagorase teoreem}\\
+Kaatetite ruutude summa on võrdne hüpotenuusi ruuduga.\\
+Ehk:};
+\end{tikzpicture}
+
+
+\begin{equation}
+\label{40_eq1}
+\boxed{c^{2}=a^{2}+b^{2}}
+\end{equation}
+
+\hspace{5mm} 
+Järelikult, selleks et leida hüpotenuusi pikkust, tuleb avaldise mõlemad pooled võtta ruutjuure alla.
+
+\[ \sqrt{c^{2}}=\sqrt{a^{2}+b^{2}}  \]
+
+\hspace{5mm}
+Siit saame, et hüpotenuusi pikkus avaldub järgmiselt:
+
+\begin{equation}
+\label{40_eq2}
+\boxed{c=\sqrt{a^{2}+b^{2}}}
+\end{equation}
+
+\hspace{5mm}
+Avaldises \ref{40_eq1} tähtede ümberpaigutamisel, saame kätte ka üldised valemid kaatetite jaoks, mis näevad\\ \hspace{5mm} välja nõnda:
+
+\begin{equation}
+\label{40_eq3}
+\boxed{
+\begin{tabular}{l}
+$a=\sqrt{c^{2}-b^{2}}$\\
+$b=\sqrt{c^{2}-a^{2}}$
+\end{tabular}
+}
+\end{equation}
+
+\vspace{2mm}
+\hspace{5mm}
+\textbf{Näide:}
+
+\vspace{2mm}
+\hspace{5mm}
+Olgu täisnurkse kolmnurga hüpotenuus $25$ cm ning ühe kateeti pikkus $10$ cm. Leia täisnurkse\\ \hspace{5mm} kolmnurga teine kaatet.
+
+\vspace{2mm}
+\hspace{5mm}
+Ülesandest lugesime välja, et $c=25$ cm ning üks kaatetitest on $a=10$ cm. Kasutame Pythagorase\\ \hspace{5mm} teoreemi \ref{40_eq1}, et leida puudu olev kaatet.
+
+\vspace{2mm}
+\hspace{5mm}
+\[ 25^{2} = 10^{2}+b^{2} \]
+
+\vspace{2mm}
+\hspace{5mm}
+Jätame $b^{2}$ paremalepoole võrdust ning ülejäänud arvud viime vasakulepoole.
+
+\[ 25^{2}-10^{2}=b^{2}\]
+
+\vspace{2mm}
+\hspace{5mm}
+Kuna me soovime leida lihtsalt $b$, mitte $b^{2}$, siis tuleb meil mõlemad võrduse pooled viia ruutjuure alla.\\ \hspace{5mm} Saame:
+
+\[ \sqrt{25^{2}-10^{2}}=\sqrt{b^{2}} \hspace{3mm} \longrightarrow \hspace{3mm} \sqrt{625-100}=b\]
+
+\[b=\sqrt{525} \approx 22.9 (cm) \]
+\end{flushleft}
+}}}
+\end{center}
+
+\pagebreak
+\vspace{0.5cm}
+
+\textbf{Märkmed}\\
+\vspace{2mm}
+\begin{mdframed}[style=graphpaper]
+\vspace{22cm}
+\end{mdframed}

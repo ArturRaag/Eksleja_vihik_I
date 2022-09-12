@@ -1,0 +1,176 @@
+\begin{center}
+\fbox{\fbox{\parbox{6.5in}{\centering
+\begin{flushleft}
+
+\vspace{2mm}
+\hspace{5mm}
+\textbf{\underline{Trigonomeetria}}
+
+
+\vspace{2mm}
+\hspace{5mm}
+\begin{tikzpicture}[scale=0.5]
+
+\coordinate (A) at (0,0);
+\coordinate (B) at (8,0);
+\coordinate (C) at (8,4);
+
+\draw[line width= 0.4mm] (A)--(B)--(C)--cycle;
+
+\path (A)--(B) coordinate[pos=0.5](a);
+\path (B)--(C) coordinate[pos=0.5](b);
+\path (C)--(A) coordinate[pos=0.5](c);
+
+\node[below] at (a){$a$};
+\node[right] at (b){$b$};
+\node[above] at (c){$c$};
+
+\node[left] at (A){$A$};
+\node[right] at (B){$B$};
+\node[above] at (C){$C$};
+
+\pic [draw, angle radius = 5mm ] {angle=C--B--A} node at (7.6,0.4){$\cdot$};
+\pic [draw, angle radius= 10mm] {angle=B--A--C} node at (1.2,0.3){$\alpha$};
+\pic [draw, angle radius = 7mm] {angle = A--C--B} node at (7.6,3.2){$\beta$};
+
+\node[text width=9 cm] at (20,2){Nurga \textbf{siinus} on võrdne selle nurga \textbf{vastaskaateti} ja \textbf{hüpotenuusi} suhtega.
+
+\begin{equation}
+\label{41_eq1}
+\boxed{sin(\alpha)= \dfrac{vk}{hu}}
+\end{equation}};
+\end{tikzpicture}
+
+\vspace{2mm}
+\hspace{5mm}
+Nurga \textbf{koosinus} on võrdne selle nurga \textbf{lähiskaateti} ja \textbf{hüpotenuusi} suhtega.
+
+\begin{equation}
+\label{41_eq2}
+\boxed{cos(\alpha)=\dfrac{lk}{hu}}
+\end{equation}
+
+\vspace{2mm}
+\hspace{5mm}
+Nurga \textbf{tangens} on võrdne selle nurga \textbf{vastaskaateti} ja \textbf{lähiskaateti} suhtega.
+
+\begin{equation}
+\label{41_eq3}
+\boxed{tan(\alpha)=\dfrac{vk}{lk}}
+\end{equation}
+
+\vspace{2mm}
+\hspace{5mm}
+Meie joonise järgi:
+
+\begin{equation}
+\label{41_eq4}
+\begin{tabular}{l}
+$sin(\alpha)=\dfrac{b}{c}$ \hspace{7mm} $cos(\alpha)=\dfrac{a}{c}$ \hspace{7mm} $tan(\alpha)=\dfrac{b}{a}$\\
+\\
+$sin(\beta)=\dfrac{a}{c}$ \hspace{7mm} $cos(\beta)=\dfrac{b}{c}$ \hspace{7mm} $tan(\beta)=\dfrac{a}{b}$
+\end{tabular}
+\end{equation} 
+
+\vspace{2mm}
+\hspace{5mm}
+Nurga väärtuste leidmiseks tulevad kasuks ka trigonomeetrilised pöördfunktsioonid: arkusiinus,\\ \hspace{5mm} arkuskoosinus, arkustangens.
+
+\vspace{2mm}
+\hspace{5mm}
+Kalkulaatoritel või arvutitel tähistatakse neid järgmiselt: $arcsin(x)$, $arccos(x)$, $arctan(x)$ või $sin^{-1}(x)$,\\ \hspace{5mm} $cos^{-1}(x)$, $tan^{-1}(x)$. Kus $x$ on suvaline teravnurk.
+
+\vspace{2mm}
+\hspace{5mm}
+\textbf{Näiteks:} Leiame nurga $\alpha$ väärtuse, kui: $sin(\alpha)=\dfrac{6}{12}$
+
+\hspace{5mm}
+
+\[ sin(\alpha)=\dfrac{6}{12}=\dfrac{1}{2} \] 
+
+\hspace{5mm}
+Paneme mõlemad võrdusepooled arkusiinuse alla.
+
+\[ sin(\alpha)=\dfrac{1}{2} \hspace{2mm} \Big| sin^{-1}() \]
+
+\[ sin^{-1}(sin(\alpha))= sin^{-1} \left( \dfrac{1}{2} \right) \hspace{3mm} \longrightarrow \alpha = 30 \]
+
+\end{flushleft}
+}}}
+\end{center}
+
+
+
+
+\begin{center}
+\fbox{\fbox{\parbox{6.5in}{\centering
+\begin{flushleft}
+
+
+\vspace{2mm}
+\hspace{5mm}
+\textbf{\underline{Siinus ja koosinusteoreemid*}}
+
+\vspace{2mm}
+\hspace{5mm}
+\begin{tikzpicture}[scale=0.4]
+\coordinate (A) at (0,0);
+\coordinate (B) at (8,0);
+\coordinate (C) at (10,4);
+
+\draw[line width=0.4mm] (A)--(B)--(C)--cycle;
+
+\path (A)--(B) coordinate[pos=0.5](c);
+\path (B)--(C) coordinate[pos=0.5](a);
+\path (C)--(A) coordinate[pos=0.5](b);
+
+\node[right] at (a){$a$};
+\node[above] at (b){$b$};
+\node[below] at (c){$c$};
+
+\pic [draw, angle radius = 11mm ] {angle=B--A--C} node at (1.9,0.4){$\alpha$};
+\pic [draw, angle radius = 8mm ] {angle=A--C--B} node at (9,3){$\gamma$};
+\pic [draw, angle radius = 5mm ] {angle=C--B--A} node at (7.7,0.5){$\beta$};
+
+\node[text width=9cm] at (-15,2){Pythagorase teoreem \ref{40_eq1} kehtib vaid täisnurkse kolmnurga puhul. Selleks, et lahendada kolmnurki, mis ei ole täisnurksed, saab kasutada siinus- ja koosinusteoreeme.
+};
+\end{tikzpicture}
+
+\vspace{2mm}
+\hspace{5mm}
+\textbf{Siinusteoreem}
+
+\begin{equation}
+\label{41_eq5}
+\boxed{\dfrac{a}{sin(\alpha)}=\dfrac{b}{sin(\beta)}=\dfrac{c}{sin(\gamma)}}
+\end{equation}
+
+
+\vspace{5mm}
+\hspace{5mm}
+\textbf{Koosinusteoreem}
+
+\begin{equation}
+\label{41_eq6}
+\boxed{
+\begin{tabular}{l}
+$a^{2}=b^{2}+c^{2}-2bc \cdot cos(\alpha)$\\
+\\
+$b^{2}=a^{2}+c^{2}-2ac \cdot cos(\beta)$\\
+\\
+$c^{2}=a^{2}+b^{2}-2ab \cdot cos(\gamma)$\\
+\end{tabular}
+}
+\end{equation}
+
+\end{flushleft}
+}}}
+\end{center}
+
+\vspace{0.5cm}
+
+\textbf{Märkmed}\\
+\vspace{2mm}
+\begin{mdframed}[style=graphpaper]
+\vspace{3cm}
+\end{mdframed}
